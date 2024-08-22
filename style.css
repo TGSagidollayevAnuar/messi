@@ -1,0 +1,192 @@
+* {
+    font-family: "PT Serif", serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.header__first {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    background-color: #2a2f37;
+    height: 32px;
+    margin: 0;
+    align-items: center;   
+}
+
+.header__first li {
+    color: white;
+    list-style-type: none;
+}
+
+.header__first__more {
+    position: relative;
+}
+
+.header__first__more::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: -40px;
+    background-size: 20px 4px;
+    height: 10px;
+    width: 30px;
+    background: url("https://ss.sport-express.ru/fb/img/icons/menu_dots.svg") no-repeat 0 0;
+}
+
+.header__second {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    align-items: center;
+}
+
+.header__second li {
+    color: #2a2f37;
+    list-style-type: none;
+}
+
+.header__second__football {
+    position: relative;
+}
+.header__second__football::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -17px;
+    top: 7px;
+    width: 10px;
+    height: 10px;
+    background: url("https://ss.sport-express.ru/fb/img/icons/arrow-black-right.svg") no-repeat center center;
+}
+
+.header__second__england {
+    position: relative;
+}
+.header__second__england::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -17px;
+    top: 7px;
+    width: 10px;
+    height: 10px;
+    background: url("https://ss.sport-express.ru/fb/img/icons/arrow-black-right.svg") no-repeat center center;
+}
+
+.header__third {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    border: 1px solid #dee3e8;
+    height: 75px;
+}
+
+.header__third__socials {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header__third__auth {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* main */
+
+main {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 0 32.7px 20px;
+    padding: 20px 30px;
+}
+
+.main__first {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.main__first img {
+    width: 25px;
+    height: 22px;
+}
+
+.main__first a {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.main__first a:hover {
+    background-color: green;
+}
+
+.main__second {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__second__breadcrumb {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+}
+
+.main__second__breadcrumb a {
+    font-size: 15px;
+    color: #0072b8;
+    margin-bottom: 40px;
+}
+
+.main__second__breadcrumb a::after {
+    content: "/";
+    color: #0072b8;
+    margin: 0 3px;
+}
+
+.main__second p {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    font-size: 13px;
+    color: #2a2f37;
+    margin-bottom: 14px;
+}
+
+.main__second h1 {
+    width: 680px;
+    color: #2a2f37;
+    line-height: 35px;
+    margin-bottom: 15px;
+}
+
+.main__second__author {
+    display: flex;
+    gap: 11px;
+}
+
+.main__second__author img {
+    border-radius: 50%;
+}
+
+.main__second__author span {
+    font-size: 16px;
+    color: #2a2f37;
+}
